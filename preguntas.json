@@ -1,0 +1,24 @@
+[
+    {
+        "pregunta": "¿Cuál es la capital de Francia?",
+        "opciones": [
+            "Berlín",
+            "Madrid",
+            "París",
+            "Londres"
+        ],
+        "respuesta": "París",
+        "descripcion": "París es la capital de Francia"
+    },
+    {
+        "pregunta": "¿Cuántos planetas tiene el sistema solar?",
+        "opciones": [
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "respuesta": "8",
+        "descripcion": "El sistema solar tiene 8 planetas"
+    }
+]
