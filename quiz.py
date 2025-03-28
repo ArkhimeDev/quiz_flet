@@ -25,11 +25,14 @@ def main(page: ft.Page):
         nonlocal total_preguntas
         nonlocal contador_preguntas
         nonlocal preguntas_aleatorias
+        nonlocal contador_preguntas
+        contador_preguntas = 0
         preguntas = cargar_preguntas(archivo)
         total_preguntas.value = str(len(preguntas))
         preguntas_aleatorias = random.sample(
             range(int(total_preguntas.value)), 10)
         print(preguntas_aleatorias)
+        total_preguntas.value = str(len(preguntas_aleatorias))
         puntuacion.value = "0"
         numero_pregunta.value = "1"
         cuestion.value = preguntas[preguntas_aleatorias[contador_preguntas]]["pregunta"]
@@ -71,9 +74,9 @@ def main(page: ft.Page):
 
     def aumentar_nivel():
         nonlocal contador_preguntas
-
         if contador_preguntas < len(preguntas_aleatorias)-1:
             contador_preguntas += 1
+            numero_pregunta.value = str(int(numero_pregunta.value)+1)
             siguiente_pregunta()
             page.update()
         else:
@@ -142,8 +145,10 @@ def main(page: ft.Page):
 
     # preguntas = cargar_preguntas("preguntas.json")
 
-    numero_pregunta = ft.Text(value="1")
-    puntuacion = ft.Text(value="0")
+    numero_pregunta = ft.Text(
+        value="1", color=ft.Colors.PINK_600, size=20, weight=ft.FontWeight.BOLD)
+    puntuacion = ft.Text(value="0", color=ft.Colors.GREEN_600,
+                         size=20, weight=ft.FontWeight.BOLD)
     preguntas = ""
     preguntas_aleatorias = ""
     contador_preguntas = 0
@@ -156,17 +161,20 @@ def main(page: ft.Page):
     opcion4 = ft.ElevatedButton(on_click=comprobar)
     descripcion = ft.Text(value="")
     texto_resultado = ft.Text(value="", size=30)
-    total_preguntas = ft.Text()
+    total_preguntas = ft.Text(color=ft.Colors.PINK_600,
+                              size=20, weight=ft.FontWeight.BOLD)
 
     barra_estado = ft.Row(controls=[
         ft.Container(
             content=ft.Row(
                 controls=[
-                    ft.Icon(name=ft.Icons.QUESTION_ANSWER_OUTLINED),
+                    ft.Icon(name=ft.Icons.QUESTION_ANSWER_OUTLINED,
+                            color=ft.Colors.PINK_600),
                     ft.Container(
                         content=numero_pregunta
                     ),
-                    ft.Text(value="/"),
+                    ft.Text(value="/", color=ft.Colors.PINK_600,
+                            size=20, weight=ft.FontWeight.BOLD),
                     ft.Container(
                         content=total_preguntas
                     )
@@ -177,7 +185,8 @@ def main(page: ft.Page):
         ft.Container(
             content=ft.Row(
                 controls=[
-                    ft.Icon(name=ft.Icons.LIBRARY_ADD_CHECK_OUTLINED),
+                    ft.Icon(name=ft.Icons.LIBRARY_ADD_CHECK_OUTLINED,
+                            color=ft.Colors.GREEN_600),
                     ft.Container(
                         content=puntuacion,
                         alignment=ft.alignment.center_right,
@@ -198,17 +207,25 @@ def main(page: ft.Page):
     container_inicio = ft.Column(
         controls=[
             ft.Container(
-                content=ft.Text(value="Bienvenido a MyQuiz",
+                content=ft.Image(src="assets/images/quiz_quest.png",
+                                 width=200, height=200),
+                alignment=ft.alignment.center
+            ),
+            ft.Container(
+                content=ft.Text(value="Selecciona temática",
                                 size=30, color=ft.Colors.LIGHT_BLUE_900),
+                alignment=ft.alignment.center
+            ),
+            ft.Divider(),
+            ft.Container(
+                content=ft.ElevatedButton(
+                    "Cultura general", on_click=seleccion_pregunta, data="cult_gen.json"),
                 alignment=ft.alignment.center
             ),
             ft.Container(
                 content=ft.ElevatedButton(
-                    "Cultura general", on_click=seleccion_pregunta, data="cult_gen.json")
-            ),
-            ft.Container(
-                content=ft.ElevatedButton(
-                    "Futbol", on_click=seleccion_pregunta, data="futbol.json")
+                    "Futbol", on_click=seleccion_pregunta, data="futbol.json"),
+                alignment=ft.alignment.center
             )
 
         ]
@@ -257,28 +274,23 @@ def main(page: ft.Page):
     container_resultado = ft.Column(
         controls=[
             ft.Container(
-                content=ft.Text(
-                    "Resultado final", color=ft.Colors.LIGHT_BLUE_900, weight=ft.FontWeight.BOLD, size=30),
+                content=ft.Image(
+                    src="assets/images/felicidades.png", width=500, height=500),
                 alignment=ft.alignment.center,
             ),
             ft.Container(
-                content=ft.Row(
-                    controls=[
-                        ft.Text("Preguntas acertadas: "),
-                        puntuacion
-                    ],
-                ),
-                alignment=ft.alignment.center,
+                content=puntuacion,
+                alignment=ft.alignment.center
             ),
             ft.ElevatedButton("Inicio", on_click=reinicio)
         ],
-        spacing=199,
-        height=2000,
         width=float("inf"),
+        alignment=ft.alignment.center
 
     )
 
     mostrar_inicio()
+    # mostrar_resultado()
 
 
 ft.app(target=main)
