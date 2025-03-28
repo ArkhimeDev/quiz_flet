@@ -1,0 +1,211 @@
+[
+    {
+        "pregunta": "¿Qué país ganó la primera Copa del Mundo de la FIFA?",
+        "opciones": [
+            "Brasil",
+            "Argentina",
+            "Uruguay",
+            "Italia"
+        ],
+        "respuesta": "Uruguay",
+        "descripcion": "Uruguay ganó la primera Copa del Mundo en 1930, organizada en su propio país."
+    },
+    {
+        "pregunta": "¿Cuántos jugadores conforman un equipo de fútbol en el campo?",
+        "opciones": [
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "respuesta": "11",
+        "descripcion": "Cada equipo de fútbol cuenta con 11 jugadores en el campo durante un partido."
+    },
+    {
+        "pregunta": "¿Quién es el máximo goleador de la historia de la Copa del Mundo?",
+        "opciones": [
+            "Pelé",
+            "Ronaldo Nazário",
+            "Miroslav Klose",
+            "Lionel Messi"
+        ],
+        "respuesta": "Miroslav Klose",
+        "descripcion": "Miroslav Klose es el máximo goleador de la historia de la Copa del Mundo con 16 goles."
+    },
+    {
+        "pregunta": "¿Qué club ha ganado más títulos de la UEFA Champions League?",
+        "opciones": [
+            "FC Barcelona",
+            "Manchester United",
+            "Real Madrid",
+            "Bayern Múnich"
+        ],
+        "respuesta": "Real Madrid",
+        "descripcion": "El Real Madrid es el club con más títulos de la UEFA Champions League en la historia."
+    },
+    {
+        "pregunta": "¿Quién es el único jugador que ha ganado 3 Copas del Mundo?",
+        "opciones": [
+            "Diego Maradona",
+            "Pelé",
+            "Zinedine Zidane",
+            "Ronaldo Nazário"
+        ],
+        "respuesta": "Pelé",
+        "descripcion": "Pelé es el único jugador que ha ganado 3 Copas del Mundo con Brasil (1958, 1962 y 1970)."
+    },
+    {
+        "pregunta": "¿Qué selección ganó la Eurocopa 2020 (jugada en 2021)?",
+        "opciones": [
+            "España",
+            "Italia",
+            "Francia",
+            "Inglaterra"
+        ],
+        "respuesta": "Italia",
+        "descripcion": "Italia ganó la Eurocopa 2020 tras vencer a Inglaterra en la final."
+    },
+    {
+        "pregunta": "¿Qué jugador es conocido como 'La Pulga'?",
+        "opciones": [
+            "Cristiano Ronaldo",
+            "Neymar",
+            "Lionel Messi",
+            "Kylian Mbappé"
+        ],
+        "respuesta": "Lionel Messi",
+        "descripcion": "Lionel Messi es conocido como 'La Pulga' debido a su baja estatura y agilidad."
+    },
+    {
+        "pregunta": "¿En qué país se celebró la Copa del Mundo de 2014?",
+        "opciones": [
+            "Sudáfrica",
+            "Brasil",
+            "Alemania",
+            "Rusia"
+        ],
+        "respuesta": "Brasil",
+        "descripcion": "La Copa del Mundo de 2014 se celebró en Brasil y Alemania fue el campeón."
+    },
+    {
+        "pregunta": "¿Qué entrenador llevó a España a ganar su primer Mundial?",
+        "opciones": [
+            "Vicente del Bosque",
+            "Luis Aragonés",
+            "Pep Guardiola",
+            "Julen Lopetegui"
+        ],
+        "respuesta": "Vicente del Bosque",
+        "descripcion": "Vicente del Bosque fue el entrenador de España en el Mundial 2010, donde lograron su primer título."
+    },
+    {
+        "pregunta": "¿Cuál es el equipo más laureado de la Premier League?",
+        "opciones": [
+            "Liverpool",
+            "Manchester United",
+            "Chelsea",
+            "Arsenal"
+        ],
+        "respuesta": "Manchester United",
+        "descripcion": "Manchester United es el equipo con más títulos de la Premier League en la historia."
+    },
+    {
+        "pregunta": "¿Qué jugador ha ganado más Balones de Oro?",
+        "opciones": [
+            "Cristiano Ronaldo",
+            "Lionel Messi",
+            "Michel Platini",
+            "Johan Cruyff"
+        ],
+        "respuesta": "Lionel Messi",
+        "descripcion": "Lionel Messi es el jugador con más Balones de Oro en la historia del fútbol."
+    },
+    {
+        "pregunta": "¿Cuál fue la sede de la Copa del Mundo de 2022?",
+        "opciones": [
+            "Catar",
+            "Estados Unidos",
+            "Francia",
+            "Italia"
+        ],
+        "respuesta": "Catar",
+        "descripcion": "Catar fue la sede de la Copa del Mundo de 2022, siendo la primera vez que el torneo se celebró en el Medio Oriente."
+    },
+    {
+        "pregunta": "¿Qué selección ganó la Copa América 2021?",
+        "opciones": [
+            "Brasil",
+            "Argentina",
+            "Uruguay",
+            "Chile"
+        ],
+        "respuesta": "Argentina",
+        "descripcion": "Argentina ganó la Copa América 2021 tras vencer a Brasil en la final en el estadio Maracaná."
+    },
+    {
+        "pregunta": "¿Cuál es el club de fútbol más antiguo del mundo?",
+        "opciones": [
+            "Sheffield FC",
+            "Real Madrid",
+            "Barcelona",
+            "Manchester United"
+        ],
+        "respuesta": "Sheffield FC",
+        "descripcion": "Sheffield FC, fundado en 1857, es reconocido como el club de fútbol más antiguo del mundo."
+    },
+    {
+        "pregunta": "¿Qué equipo ha ganado más Copas Libertadores?",
+        "opciones": [
+            "Boca Juniors",
+            "River Plate",
+            "Independiente",
+            "Flamengo"
+        ],
+        "respuesta": "Independiente",
+        "descripcion": "Independiente de Argentina es el club con más títulos de la Copa Libertadores."
+    },
+    {
+        "pregunta": "¿Quién marcó el gol de la mano de Dios?",
+        "opciones": [
+            "Pelé",
+            "Diego Maradona",
+            "Cristiano Ronaldo",
+            "Zinedine Zidane"
+        ],
+        "respuesta": "Diego Maradona",
+        "descripcion": "Diego Maradona anotó el famoso gol de la 'Mano de Dios' contra Inglaterra en el Mundial de 1986."
+    },
+    {
+        "pregunta": "¿Qué país organizó el Mundial de 1998?",
+        "opciones": [
+            "Italia",
+            "Francia",
+            "Alemania",
+            "Brasil"
+        ],
+        "respuesta": "Francia",
+        "descripcion": "Francia organizó la Copa del Mundo de 1998 y se coronó campeón."
+    },
+    {
+        "pregunta": "¿Quién ha ganado más títulos de la Copa América?",
+        "opciones": [
+            "Argentina",
+            "Brasil",
+            "Uruguay",
+            "Chile"
+        ],
+        "respuesta": "Uruguay",
+        "descripcion": "Uruguay ha ganado más títulos de la Copa América, con un total de 15."
+    },
+    {
+        "pregunta": "¿Qué equipo ha ganado más veces la Bundesliga?",
+        "opciones": [
+            "Borussia Dortmund",
+            "Bayern Múnich",
+            "Hamburgo",
+            "RB Leipzig"
+        ],
+        "respuesta": "Bayern Múnich",
+        "descripcion": "El Bayern Múnich es el club con más títulos de la Bundesliga en la historia."
+    }
+]

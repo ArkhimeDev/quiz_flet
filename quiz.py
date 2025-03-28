@@ -1,15 +1,52 @@
 import flet as ft
 import json
+import random
 
 
 def main(page: ft.Page):
     page.title = "Quiz"
     page.bgcolor = ft.Colors.WHITE
 
-    numero_pregunta = ft.Text(value="1")
-    puntuacion = ft.Text(value="0")
-
     # Funciones:
+    def mostrar_resultado():
+        page.controls.clear()
+        page.add(container_resultado)
+
+    def seleccion_pregunta(e):
+        data = e.control.data
+        mostrar_preguntas(data)
+
+    def reinicio(e):
+        mostrar_inicio()
+
+    def mostrar_preguntas(archivo):
+        page.controls.clear()
+        nonlocal preguntas
+        nonlocal total_preguntas
+        nonlocal contador_preguntas
+        nonlocal preguntas_aleatorias
+        preguntas = cargar_preguntas(archivo)
+        total_preguntas.value = str(len(preguntas))
+        preguntas_aleatorias = random.sample(
+            range(int(total_preguntas.value)), 10)
+        print(preguntas_aleatorias)
+        puntuacion.value = "0"
+        numero_pregunta.value = "1"
+        cuestion.value = preguntas[preguntas_aleatorias[contador_preguntas]]["pregunta"]
+        opcion1.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][0]
+        opcion1.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][0]
+        opcion2.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][1]
+        opcion2.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][1]
+        opcion3.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][2]
+        opcion3.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][2]
+        opcion4.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][3]
+        opcion4.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][3]
+
+        page.add(container_preguntas)
+
+    def mostrar_inicio():
+        page.controls.clear()
+        page.add(container_inicio)
 
     def cargar_preguntas(archivo):
         with open(archivo, "r", encoding="utf-8") as f:
@@ -18,12 +55,9 @@ def main(page: ft.Page):
     def comprobar(e):
         data = e.control.data
         nonlocal texto_resultado
-        descripcion.value = preguntas[int(
-            numero_pregunta.value)-1]["descripcion"]
-        print(data)
-        print(
-            f"respuesta {preguntas[int(numero_pregunta.value)-1]["respuesta"]}")
-        if data == preguntas[int(numero_pregunta.value)-1]["respuesta"]:
+        descripcion.value = preguntas[preguntas_aleatorias[contador_preguntas]]["descripcion"]
+
+        if data == preguntas[preguntas_aleatorias[contador_preguntas]]["respuesta"]:
             print("CORRECTO")
             texto_resultado.value = "CORRECTO"
             texto_resultado.color = ft.Colors.GREEN_600
@@ -36,26 +70,26 @@ def main(page: ft.Page):
             resultado(1)
 
     def aumentar_nivel():
+        nonlocal contador_preguntas
 
-        if int(numero_pregunta.value) < len(preguntas):
-            numero_pregunta.value = str(int(numero_pregunta.value)+1)
-
-            print(f"numero de pregunta: {numero_pregunta.value}")
+        if contador_preguntas < len(preguntas_aleatorias)-1:
+            contador_preguntas += 1
+            siguiente_pregunta()
+            page.update()
         else:
             print(f"La puntuación obtenida es: {puntuacion} puntos")
-        siguiente_pregunta()
-        page.update()
+            mostrar_resultado()
 
     def siguiente_pregunta():
-        cuestion.value = preguntas[int(numero_pregunta.value)-1]["pregunta"]
-        opcion1.text = preguntas[int(numero_pregunta.value)-1]["opciones"][0]
-        opcion1.data = preguntas[int(numero_pregunta.value)-1]["opciones"][0]
-        opcion2.text = preguntas[int(numero_pregunta.value)-1]["opciones"][1]
-        opcion2.data = preguntas[int(numero_pregunta.value)-1]["opciones"][1]
-        opcion3.text = preguntas[int(numero_pregunta.value)-1]["opciones"][2]
-        opcion3.data = preguntas[int(numero_pregunta.value)-1]["opciones"][2]
-        opcion4.text = preguntas[int(numero_pregunta.value)-1]["opciones"][3]
-        opcion4.data = preguntas[int(numero_pregunta.value)-1]["opciones"][3]
+        cuestion.value = preguntas[preguntas_aleatorias[contador_preguntas]]["pregunta"]
+        opcion1.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][0]
+        opcion1.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][0]
+        opcion2.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][1]
+        opcion2.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][1]
+        opcion3.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][2]
+        opcion3.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][2]
+        opcion4.text = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][3]
+        opcion4.data = preguntas[preguntas_aleatorias[contador_preguntas]]["opciones"][3]
 
         page.update()
 
@@ -106,34 +140,23 @@ def main(page: ft.Page):
 
         page.open(dialogo)
 
-    preguntas = cargar_preguntas("preguntas.json")
+    # preguntas = cargar_preguntas("preguntas.json")
+
+    numero_pregunta = ft.Text(value="1")
+    puntuacion = ft.Text(value="0")
+    preguntas = ""
+    preguntas_aleatorias = ""
+    contador_preguntas = 0
 
     cuestion = ft.Text(
-        value=preguntas[int(numero_pregunta.value)-1]["pregunta"], color=ft.Colors.WHITE, size=20, weight=ft.FontWeight.W_800)
-
-    opcion1 = ft.ElevatedButton(preguntas[int(numero_pregunta.value)-1]["opciones"][0],
-                                on_click=comprobar,
-                                data=preguntas[int(
-                                    numero_pregunta.value)-1]["opciones"][0]
-                                )
-    opcion2 = ft.ElevatedButton(preguntas[int(numero_pregunta.value)-1]["opciones"][1],
-                                on_click=comprobar,
-                                data=preguntas[int(
-                                    numero_pregunta.value)-1]["opciones"][1]
-                                )
-    opcion3 = ft.ElevatedButton(preguntas[int(numero_pregunta.value)-1]["opciones"][2],
-                                on_click=comprobar,
-                                data=preguntas[int(
-                                    numero_pregunta.value)-1]["opciones"][2]
-                                )
-    opcion4 = ft.ElevatedButton(preguntas[int(numero_pregunta.value)-1]["opciones"][3],
-                                on_click=comprobar,
-                                data=preguntas[int(
-                                    numero_pregunta.value)-1]["opciones"][3]
-                                )
+        value="", color=ft.Colors.WHITE, size=20, weight=ft.FontWeight.W_800)
+    opcion1 = ft.ElevatedButton(on_click=comprobar)
+    opcion2 = ft.ElevatedButton(on_click=comprobar)
+    opcion3 = ft.ElevatedButton(on_click=comprobar)
+    opcion4 = ft.ElevatedButton(on_click=comprobar)
+    descripcion = ft.Text(value="")
     texto_resultado = ft.Text(value="", size=30)
-
-    descripcion = ft.Text(value="Aqui va la desrcipción de la respuesta")
+    total_preguntas = ft.Text()
 
     barra_estado = ft.Row(controls=[
         ft.Container(
@@ -145,8 +168,8 @@ def main(page: ft.Page):
                     ),
                     ft.Text(value="/"),
                     ft.Container(
-                        content=ft.Text(value=str(len(preguntas)))
-                    ),
+                        content=total_preguntas
+                    )
                 ]
             ),
             margin=10
@@ -172,7 +195,26 @@ def main(page: ft.Page):
         alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
     )
 
-    container = ft.Column(
+    container_inicio = ft.Column(
+        controls=[
+            ft.Container(
+                content=ft.Text(value="Bienvenido a MyQuiz",
+                                size=30, color=ft.Colors.LIGHT_BLUE_900),
+                alignment=ft.alignment.center
+            ),
+            ft.Container(
+                content=ft.ElevatedButton(
+                    "Cultura general", on_click=seleccion_pregunta, data="cult_gen.json")
+            ),
+            ft.Container(
+                content=ft.ElevatedButton(
+                    "Futbol", on_click=seleccion_pregunta, data="futbol.json")
+            )
+
+        ]
+    )
+
+    container_preguntas = ft.Column(
         controls=[
             barra_estado,
             ft.Container(
@@ -212,7 +254,31 @@ def main(page: ft.Page):
         ]
     )
 
-    page.add(container)
+    container_resultado = ft.Column(
+        controls=[
+            ft.Container(
+                content=ft.Text(
+                    "Resultado final", color=ft.Colors.LIGHT_BLUE_900, weight=ft.FontWeight.BOLD, size=30),
+                alignment=ft.alignment.center,
+            ),
+            ft.Container(
+                content=ft.Row(
+                    controls=[
+                        ft.Text("Preguntas acertadas: "),
+                        puntuacion
+                    ],
+                ),
+                alignment=ft.alignment.center,
+            ),
+            ft.ElevatedButton("Inicio", on_click=reinicio)
+        ],
+        spacing=199,
+        height=2000,
+        width=float("inf"),
+
+    )
+
+    mostrar_inicio()
 
 
 ft.app(target=main)

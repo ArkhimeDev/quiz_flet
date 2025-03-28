@@ -1,0 +1,134 @@
+[
+    {
+        "pregunta": "¿Cuál es la capital de Francia?",
+        "opciones": [
+            "Berlín",
+            "Madrid",
+            "París",
+            "Londres"
+        ],
+        "respuesta": "París",
+        "descripcion": "París es la capital de Francia"
+    },
+    {
+        "pregunta": "¿Cuántos planetas tiene el sistema solar?",
+        "opciones": [
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "respuesta": "8",
+        "descripcion": "El sistema solar tiene 8 planetas"
+    },
+    {
+        "pregunta": "¿Cuál es el océano más grande del mundo?",
+        "opciones": [
+            "Atlántico",
+            "Índico",
+            "Pacífico",
+            "Ártico"
+        ],
+        "respuesta": "Pacífico",
+        "descripcion": "El océano Pacífico es el más grande del mundo."
+    },
+    {
+        "pregunta": "¿Quién escribió 'Cien años de soledad'?",
+        "opciones": [
+            "Mario Vargas Llosa",
+            "Gabriel García Márquez",
+            "Pablo Neruda",
+            "Julio Cortázar"
+        ],
+        "respuesta": "Gabriel García Márquez",
+        "descripcion": "Gabriel García Márquez escribió 'Cien años de soledad'."
+    },
+    {
+        "pregunta": "¿Cuál es el metal más abundante en la corteza terrestre?",
+        "opciones": [
+            "Oro",
+            "Aluminio",
+            "Hierro",
+            "Cobre"
+        ],
+        "respuesta": "Aluminio",
+        "descripcion": "El aluminio es el metal más abundante en la corteza terrestre."
+    },
+    {
+        "pregunta": "¿Cuál es el país más grande del mundo por superficie?",
+        "opciones": [
+            "Canadá",
+            "Estados Unidos",
+            "China",
+            "Rusia"
+        ],
+        "respuesta": "Rusia",
+        "descripcion": "Rusia es el país más grande del mundo por superficie."
+    },
+    {
+        "pregunta": "¿Qué científico desarrolló la teoría de la relatividad?",
+        "opciones": [
+            "Isaac Newton",
+            "Nikola Tesla",
+            "Albert Einstein",
+            "Stephen Hawking"
+        ],
+        "respuesta": "Albert Einstein",
+        "descripcion": "Albert Einstein desarrolló la teoría de la relatividad."
+    },
+    {
+        "pregunta": "¿Cuántos continentes hay en la Tierra?",
+        "opciones": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "respuesta": "7",
+        "descripcion": "La Tierra tiene 7 continentes."
+    },
+    {
+        "pregunta": "¿En qué año llegó el hombre a la Luna?",
+        "opciones": [
+            "1965",
+            "1969",
+            "1972",
+            "1959"
+        ],
+        "respuesta": "1969",
+        "descripcion": "El hombre llegó a la Luna en 1969 durante la misión Apolo 11."
+    },
+    {
+        "pregunta": "¿Cuál es el río más largo del mundo?",
+        "opciones": [
+            "Amazonas",
+            "Nilo",
+            "Misisipi",
+            "Yangtsé"
+        ],
+        "respuesta": "Amazonas",
+        "descripcion": "El Amazonas es el río más largo del mundo."
+    },
+    {
+        "pregunta": "¿Qué elemento químico tiene el símbolo 'O'?",
+        "opciones": [
+            "Oxígeno",
+            "Oro",
+            "Osmio",
+            "Oganesón"
+        ],
+        "respuesta": "Oxígeno",
+        "descripcion": "El símbolo 'O' representa al oxígeno en la tabla periódica."
+    },
+    {
+        "pregunta": "¿Cuál es la capital de Japón?",
+        "opciones": [
+            "Pekín",
+            "Seúl",
+            "Tokio",
+            "Bangkok"
+        ],
+        "respuesta": "Tokio",
+        "descripcion": "Tokio es la capital de Japón."
+    }
+]
