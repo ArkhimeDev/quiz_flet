@@ -130,5 +130,225 @@
         ],
         "respuesta": "Tokio",
         "descripcion": "Tokio es la capital de Japón."
+    },
+    {
+        "pregunta": "¿Cuál es el país con mayor población en el mundo?",
+        "opciones": [
+            "Estados Unidos",
+            "India",
+            "China",
+            "Brasil"
+        ],
+        "respuesta": "China",
+        "descripcion": "China es el país con mayor población del mundo."
+    },
+    {
+        "pregunta": "¿Qué año marcó el inicio de la Segunda Guerra Mundial?",
+        "opciones": [
+            "1914",
+            "1939",
+            "1945",
+            "1929"
+        ],
+        "respuesta": "1939",
+        "descripcion": "La Segunda Guerra Mundial comenzó en 1939."
+    },
+    {
+        "pregunta": "¿Cuál es la montaña más alta del mundo?",
+        "opciones": [
+            "Monte Everest",
+            "K2",
+            "Kilimanjaro",
+            "Annapurna"
+        ],
+        "respuesta": "Monte Everest",
+        "descripcion": "El Monte Everest es la montaña más alta del mundo."
+    },
+    {
+        "pregunta": "¿Quién descubrió América?",
+        "opciones": [
+            "Cristóbal Colón",
+            "Americo Vespucio",
+            "Hernán Cortés",
+            "Fernando de Magallanes"
+        ],
+        "respuesta": "Cristóbal Colón",
+        "descripcion": "Cristóbal Colón llegó a América en 1492."
+    },
+    {
+        "pregunta": "¿Cuál es la capital de Canadá?",
+        "opciones": [
+            "Toronto",
+            "Ottawa",
+            "Vancouver",
+            "Montreal"
+        ],
+        "respuesta": "Ottawa",
+        "descripcion": "Ottawa es la capital de Canadá."
+    },
+    {
+        "pregunta": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+        "opciones": [
+            "Miguel de Cervantes",
+            "William Shakespeare",
+            "Federico García Lorca",
+            "Lope de Vega"
+        ],
+        "respuesta": "Miguel de Cervantes",
+        "descripcion": "Miguel de Cervantes escribió 'Don Quijote de la Mancha'."
+    },
+    {
+        "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+        "opciones": [
+            "Saturno",
+            "Júpiter",
+            "Neptuno",
+            "Urano"
+        ],
+        "respuesta": "Júpiter",
+        "descripcion": "Júpiter es el planeta más grande del sistema solar."
+    },
+    {
+        "pregunta": "¿Cuál es el animal terrestre más rápido?",
+        "opciones": [
+            "León",
+            "Tigre",
+            "Guepardo",
+            "Antílope"
+        ],
+        "respuesta": "Guepardo",
+        "descripcion": "El guepardo es el animal terrestre más rápido, alcanzando hasta 120 km/h."
+    },
+    {
+        "pregunta": "¿Qué científico formuló la ley de la gravedad?",
+        "opciones": [
+            "Isaac Newton",
+            "Galileo Galilei",
+            "Albert Einstein",
+            "Nicolás Copérnico"
+        ],
+        "respuesta": "Isaac Newton",
+        "descripcion": "Isaac Newton formuló la ley de la gravedad."
+    },
+    {
+        "pregunta": "¿Cuál es el idioma oficial de Brasil?",
+        "opciones": [
+            "Español",
+            "Portugués",
+            "Francés",
+            "Inglés"
+        ],
+        "respuesta": "Portugués",
+        "descripcion": "El idioma oficial de Brasil es el portugués."
+    },
+    {
+        "pregunta": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?",
+        "opciones": [
+            "1919",
+            "1945",
+            "1950",
+            "1963"
+        ],
+        "respuesta": "1945",
+        "descripcion": "La ONU fue fundada en 1945 tras la Segunda Guerra Mundial."
+    },
+    {
+        "pregunta": "¿Cuál es el metal líquido a temperatura ambiente?",
+        "opciones": [
+            "Mercurio",
+            "Plata",
+            "Oro",
+            "Plomo"
+        ],
+        "respuesta": "Mercurio",
+        "descripcion": "El mercurio es el único metal que es líquido a temperatura ambiente."
+    },
+    {
+        "pregunta": "¿Cuál es el país más pequeño del mundo?",
+        "opciones": [
+            "Mónaco",
+            "San Marino",
+            "Liechtenstein",
+            "Ciudad del Vaticano"
+        ],
+        "respuesta": "Ciudad del Vaticano",
+        "descripcion": "La Ciudad del Vaticano es el país más pequeño del mundo por superficie y población."
+    },
+    {
+        "pregunta": "¿Cuál es el nombre del satélite natural de la Tierra?",
+        "opciones": [
+            "Europa",
+            "Titán",
+            "Luna",
+            "Fobos"
+        ],
+        "respuesta": "Luna",
+        "descripcion": "La Luna es el único satélite natural de la Tierra."
+    },
+    {
+        "pregunta": "¿Quién pintó el fresco de la Capilla Sixtina?",
+        "opciones": [
+            "Leonardo da Vinci",
+            "Rafael",
+            "Miguel Ángel",
+            "Caravaggio"
+        ],
+        "respuesta": "Miguel Ángel",
+        "descripcion": "Miguel Ángel pintó el techo de la Capilla Sixtina en el Vaticano."
+    },
+    {
+        "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+        "opciones": [
+            "América",
+            "África",
+            "Asia",
+            "Oceanía"
+        ],
+        "respuesta": "África",
+        "descripcion": "El desierto del Sahara se encuentra en el continente africano."
+    },
+    {
+        "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+        "opciones": [
+            "Fémur",
+            "Tibia",
+            "Húmero",
+            "Radio"
+        ],
+        "respuesta": "Fémur",
+        "descripcion": "El fémur es el hueso más largo y fuerte del cuerpo humano."
+    },
+    {
+        "pregunta": "¿Cuál es la moneda oficial del Reino Unido?",
+        "opciones": [
+            "Euro",
+            "Libra esterlina",
+            "Dólar",
+            "Franco"
+        ],
+        "respuesta": "Libra esterlina",
+        "descripcion": "La libra esterlina es la moneda oficial del Reino Unido."
+    },
+    {
+        "pregunta": "¿Cuál es la capital de Australia?",
+        "opciones": [
+            "Sídney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+        ],
+        "respuesta": "Canberra",
+        "descripcion": "Canberra es la capital de Australia."
+    },
+    {
+        "pregunta": "¿Qué instrumento mide la presión atmosférica?",
+        "opciones": [
+            "Termómetro",
+            "Barómetro",
+            "Higrómetro",
+            "Altímetro"
+        ],
+        "respuesta": "Barómetro",
+        "descripcion": "El barómetro es el instrumento utilizado para medir la presión atmosférica."
     }
 ]

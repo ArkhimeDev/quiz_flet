@@ -80,7 +80,6 @@ def main(page: ft.Page):
             siguiente_pregunta()
             page.update()
         else:
-            print(f"La puntuación obtenida es: {puntuacion} puntos")
             mostrar_resultado()
 
     def siguiente_pregunta():
@@ -219,12 +218,12 @@ def main(page: ft.Page):
             ft.Divider(),
             ft.Container(
                 content=ft.ElevatedButton(
-                    "Cultura general", on_click=seleccion_pregunta, data="cult_gen.json"),
+                    "Cultura general", on_click=seleccion_pregunta, data="cult_gen.json", icon=ft.Icons.EMOJI_OBJECTS_OUTLINED, icon_color=ft.Colors.PINK_600, color=ft.Colors.PINK_600),
                 alignment=ft.alignment.center
             ),
             ft.Container(
                 content=ft.ElevatedButton(
-                    "Futbol", on_click=seleccion_pregunta, data="futbol.json"),
+                    "Futbol", on_click=seleccion_pregunta, data="futbol.json", icon=ft.Icons.SPORTS_SOCCER, icon_color=ft.Colors.PINK_600, color=ft.Colors.PINK_600),
                 alignment=ft.alignment.center
             )
 
@@ -275,14 +274,20 @@ def main(page: ft.Page):
         controls=[
             ft.Container(
                 content=ft.Image(
-                    src="assets/images/felicidades.png", width=500, height=500),
-                alignment=ft.alignment.center,
+                    src="assets/images/felicidades.png", width=400, height=400),
+                alignment=ft.alignment.top_center,
             ),
             ft.Container(
                 content=puntuacion,
-                alignment=ft.alignment.center
+                alignment=ft.alignment.top_center
             ),
-            ft.ElevatedButton("Inicio", on_click=reinicio)
+            ft.Container(
+                content=ft.ElevatedButton(
+                    "Inicio", on_click=reinicio, icon=ft.Icons.HOME, icon_color=ft.Colors.PINK_600, color=ft.Colors.PINK_600),
+                alignment=ft.alignment.center,
+                padding=30
+            )
+
         ],
         width=float("inf"),
         alignment=ft.alignment.center
@@ -290,7 +295,6 @@ def main(page: ft.Page):
     )
 
     mostrar_inicio()
-    # mostrar_resultado()
 
 
 ft.app(target=main)
