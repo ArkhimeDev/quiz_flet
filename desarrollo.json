@@ -1,0 +1,750 @@
+[
+    {
+        "pregunta": "¿Qué es la recursión en programación?",
+        "opciones": [
+            "Una técnica para iterar sobre arrays",
+            "Cuando una función se llama a sí misma",
+            "Un tipo de bucle for",
+            "Un patrón de diseño"
+        ],
+        "respuesta": "Cuando una función se llama a sí misma",
+        "descripcion": "La recursión es un concepto donde una función se invoca a sí misma para resolver problemas dividiéndolos en subproblemas más pequeños (ej: Fibonacci, factorial)."
+    },
+    {
+        "pregunta": "¿Cuál es la diferencia entre '==' y '===' en JavaScript?",
+        "opciones": [
+            "Ninguna, son iguales",
+            "'==' compara valor y tipo, '===' solo valor",
+            "'==' compara valor, '===' valor y tipo",
+            "'===' es para asignaciones"
+        ],
+        "respuesta": "'==' compara valor, '===' valor y tipo",
+        "descripcion": "En JavaScript, '==' hace coerción de tipos antes de comparar, mientras que '===' compara valor y tipo sin coerción (más estricto). Ej: 0 == '0' es true, pero 0 === '0' es false."
+    },
+    {
+        "pregunta": "¿Qué es un índice en una base de datos?",
+        "opciones": [
+            "Un tipo de dato primitivo",
+            "Una estructura que acelera búsquedas en columnas",
+            "Una tabla temporal",
+            "Un backup automático"
+        ],
+        "respuesta": "Una estructura que acelera búsquedas en columnas",
+        "descripcion": "Los índices son estructuras (como B-trees) que mejoran la velocidad de las operaciones de búsqueda (SELECT) pero ralentizan INSERTS/UPDATES."
+    },
+    {
+        "pregunta": "¿Qué método se usa para agregar un elemento al final de un array en JavaScript?",
+        "opciones": [
+            "array.push()",
+            "array.pop()",
+            "array.shift()",
+            "array.unshift()"
+        ],
+        "respuesta": "array.push()",
+        "descripcion": "push() añade elementos al final del array. pop() remueve el último elemento, shift() remueve el primero, y unshift() añade al inicio."
+    },
+    {
+        "pregunta": "¿Qué es el 'rendering' en el contexto de frontend?",
+        "opciones": [
+            "Procesar HTML/CSS para mostrar una página web",
+            "Una técnica de optimización de bases de datos",
+            "Un protocolo de red",
+            "Un tipo de algoritmo de ordenación"
+        ],
+        "respuesta": "Procesar HTML/CSS para mostrar una página web",
+        "descripcion": "El rendering es el proceso de convertir código (HTML/CSS/JS) en píxeles visibles en la pantalla. Puede ser del lado del cliente (CSR) o servidor (SSR)."
+    },
+    {
+        "pregunta": "¿Qué significa DRY en desarrollo de software?",
+        "opciones": [
+            "Don't Repeat Yourself",
+            "Data Recovery Yield",
+            "Dynamic Resource YAML",
+            "Debugging Runtime Yields"
+        ],
+        "respuesta": "Don't Repeat Yourself",
+        "descripcion": "DRY es un principio que promueve la reutilización de código para evitar duplicación y facilitar el mantenimiento."
+    },
+    {
+        "pregunta": "¿Qué estructura de datos usa colisiones y funciones hash?",
+        "opciones": [
+            "Árbol binario",
+            "Tabla hash",
+            "Lista enlazada",
+            "Grafo"
+        ],
+        "respuesta": "Tabla hash",
+        "descripcion": "Las tablas hash usan funciones hash para mapear claves a valores. Las colisiones ocurren cuando dos claves generan el mismo hash (se resuelven con encadenamiento o direccionamiento abierto)."
+    },
+    {
+        "pregunta": "¿Qué es un microservicio?",
+        "opciones": [
+            "Un servicio pequeño con una única responsabilidad",
+            "Un tipo de base de datos",
+            "Un framework frontend",
+            "Un patrón de diseño creacional"
+        ],
+        "respuesta": "Un servicio pequeño con una única responsabilidad",
+        "descripcion": "Los microservicios son una arquitectura donde una aplicación se divide en servicios independientes, escalables y con bases de datos propias (contrario al monolito)."
+    },
+    {
+        "pregunta": "¿Qué comando de Git se usa para fusionar ramas?",
+        "opciones": [
+            "git merge",
+            "git rebase",
+            "git pull",
+            "git fetch"
+        ],
+        "respuesta": "git merge",
+        "descripcion": "git merge combina cambios de una rama a otra. git rebase reescribe el historial, git pull trae cambios remotos, y git fetch solo los descarga."
+    },
+    {
+        "pregunta": "¿Qué es la inyección de dependencias?",
+        "opciones": [
+            "Un patrón para pasar dependencias externamente",
+            "Un tipo de ataque SQL",
+            "Un método de compresión de datos",
+            "Una técnica de renderizado"
+        ],
+        "respuesta": "Un patrón para pasar dependencias externamente",
+        "descripcion": "La inyección de dependencias (DI) es un patrón donde las dependencias de un objeto se proveen desde afuera (ej: mediante constructores), facilitando testing y modularidad."
+    },
+    {
+        "pregunta": "¿Qué lenguaje es interpretado y no compilado?",
+        "opciones": [
+            "C++",
+            "Python",
+            "Java",
+            "Go"
+        ],
+        "respuesta": "Python",
+        "descripcion": "Python es un lenguaje interpretado (el código se ejecuta línea por línea por un intérprete). C++, Java y Go son compilados (aunque Java usa la JVM)."
+    },
+    {
+        "pregunta": "¿Qué es la 'complejidad ciclomática'?",
+        "opciones": [
+            "Una métrica de calidad del código",
+            "Un algoritmo de ordenación",
+            "Un tipo de estructura de datos",
+            "Un patrón de diseño"
+        ],
+        "respuesta": "Una métrica de calidad del código",
+        "descripcion": "Mide la complejidad de un programa basada en el número de caminos linealmente independientes (mayor complejidad = mayor riesgo de bugs)."
+    },
+    {
+        "pregunta": "¿Qué es CORS en desarrollo web?",
+        "opciones": [
+            "Un protocolo de cifrado",
+            "Un mecanismo de seguridad para solicitudes entre dominios",
+            "Un tipo de base de datos",
+            "Un framework CSS"
+        ],
+        "respuesta": "Un mecanismo de seguridad para solicitudes entre dominios",
+        "descripcion": "CORS (Cross-Origin Resource Sharing) permite o restringe solicitudes HTTP entre diferentes dominios para prevenir ataques CSRF."
+    },
+    {
+        "pregunta": "¿Qué es el 'garbage collection'?",
+        "opciones": [
+            "Un proceso para liberar memoria automáticamente",
+            "Una técnica de ordenación de datos",
+            "Un tipo de algoritmo de búsqueda",
+            "Un patrón de diseño"
+        ],
+        "respuesta": "Un proceso para liberar memoria automáticamente",
+        "descripcion": "El garbage collection (recolección de basura) es un mecanismo que libera memoria ocupada por objetos no utilizados (ej: en Java, JavaScript)."
+    },
+    {
+        "pregunta": "¿Qué es un 'callback' en JavaScript?",
+        "opciones": [
+            "Una función que se pasa como argumento a otra función",
+            "Un tipo de bucle",
+            "Un método para declarar variables",
+            "Un objeto asíncrono"
+        ],
+        "respuesta": "Una función que se pasa como argumento a otra función",
+        "descripcion": "Un callback es una función que se ejecuta después de que otra función haya terminado (ej: en operaciones asíncronas como setTimeout)."
+    },
+    {
+        "pregunta": "¿Qué es el 'event loop' en JavaScript?",
+        "opciones": [
+            "Un bucle que maneja la ejecución de código asíncrono",
+            "Un tipo de estructura de datos",
+            "Un patrón de diseño",
+            "Una herramienta de debugging"
+        ],
+        "respuesta": "Un bucle que maneja la ejecución de código asíncrono",
+        "descripcion": "El event loop es el mecanismo que permite a JavaScript ser single-threaded pero manejar operaciones asíncronas (callbacks, promesas) usando una cola de eventos."
+    },
+    {
+        "pregunta": "¿Qué es SQL Injection?",
+        "opciones": [
+            "Un método para optimizar consultas SQL",
+            "Un ataque que manipula consultas SQL mediante entrada maliciosa",
+            "Una técnica de backup de bases de datos",
+            "Un tipo de índice en SQL"
+        ],
+        "respuesta": "Un ataque que manipula consultas SQL mediante entrada maliciosa",
+        "descripcion": "SQL Injection es un ataque donde un hacker inserta código SQL malicioso en inputs de usuario para manipular la base de datos. Se previene con consultas parametrizadas o ORMs."
+    },
+    {
+        "pregunta": "¿Qué es un 'hoisting' en JavaScript?",
+        "opciones": [
+            "Un tipo de función",
+            "Un comportamiento donde las declaraciones se mueven al inicio del scope",
+            "Una técnica de optimización",
+            "Un objeto global"
+        ],
+        "respuesta": "Un comportamiento donde las declaraciones se mueven al inicio del scope",
+        "descripcion": "El hoisting es un comportamiento de JavaScript donde las declaraciones de variables (var) y funciones se mueven al inicio de su scope antes de la ejecución."
+    },
+    {
+        "pregunta": "¿Qué es el protocolo HTTP/2?",
+        "opciones": [
+            "Una versión obsoleta de HTTP",
+            "Una mejora de HTTP/1.1 con multiplexación y compresión",
+            "Un protocolo para bases de datos",
+            "Un estándar de cifrado"
+        ],
+        "respuesta": "Una mejora de HTTP/1.1 con multiplexación y compresión",
+        "descripcion": "HTTP/2 introduce multiplexación (múltiples solicitudes en una conexión), compresión de headers y server push, mejorando el rendimiento frente a HTTP/1.1."
+    },
+    {
+        "pregunta": "¿Qué es un 'closure' en JavaScript?",
+        "opciones": [
+            "Una función que recuerda su scope léxico",
+            "Un tipo de bucle",
+            "Un método para cerrar ventanas",
+            "Una herramienta de testing"
+        ],
+        "respuesta": "Una función que recuerda su scope léxico",
+        "descripcion": "Un closure es una función que accede a variables de su scope externo incluso después de que ese scope haya terminado. Útil para encapsulamiento y currying."
+    },
+    {
+        "pregunta": "¿Qué es la 'programación reactiva'?",
+        "opciones": [
+            "Un paradigma basado en flujos de datos y propagación de cambios",
+            "Un tipo de algoritmo de ordenación",
+            "Un framework frontend",
+            "Un patrón de diseño estructural"
+        ],
+        "respuesta": "Un paradigma basado en flujos de datos y propagación de cambios",
+        "descripcion": "La programación reactiva (ej: RxJS) trabaja con flujos de datos asíncronos y reacciona a cambios (como en aplicaciones en tiempo real)."
+    },
+    {
+        "pregunta": "¿Qué es 'duck typing'?",
+        "opciones": [
+            "Un principio que evalúa objetos por su comportamiento, no por su tipo",
+            "Un tipo de estructura de datos",
+            "Un método de cifrado",
+            "Una técnica de compresión"
+        ],
+        "respuesta": "Un principio que evalúa objetos por su comportamiento, no por su tipo",
+        "descripcion": "Duck typing (\"si camina como pato y suena como pato, es un pato\") es común en lenguajes dinámicos como Python: el tipo se infiere por los métodos/propiedades que tiene."
+    },
+    {
+        "pregunta": "¿Qué es 'WebAssembly'?",
+        "opciones": [
+            "Un lenguaje de bajo nivel para ejecución en navegadores",
+            "Un framework CSS",
+            "Un protocolo de red",
+            "Un estándar de bases de datos"
+        ],
+        "respuesta": "Un lenguaje de bajo nivel para ejecución en navegadores",
+        "descripcion": "WebAssembly (Wasm) es un formato binario que permite ejecutar código de alto rendimiento en navegadores (útil para aplicaciones intensivas como juegos)."
+    },
+    {
+        "pregunta": "¿Qué es 'concurrencia' vs 'paralelismo'?",
+        "opciones": [
+            "Son sinónimos",
+            "Concurrencia: manejar múltiples tareas aparentemente al mismo tiempo; Paralelismo: ejecutarlas realmente al mismo tiempo",
+            "Concurrencia: solo en GPUs; Paralelismo: solo en CPUs",
+            "Concurrencia: para redes; Paralelismo: para bases de datos"
+        ],
+        "respuesta": "Concurrencia: manejar múltiples tareas aparentemente al mismo tiempo; Paralelismo: ejecutarlas realmente al mismo tiempo",
+        "descripcion": "Concurrencia es sobre composición de tareas (ej: threads alternándose en una CPU), paralelismo es sobre ejecución simultánea (ej: múltiples CPUs)."
+    },
+    {
+        "pregunta": "¿Qué es 'serverless'?",
+        "opciones": [
+            "Una arquitectura sin servidores (usa proveedores cloud como AWS Lambda)",
+            "Un framework frontend",
+            "Un protocolo de transferencia de archivos",
+            "Un lenguaje de programación"
+        ],
+        "respuesta": "Una arquitectura sin servidores (usa proveedores cloud como AWS Lambda)",
+        "descripcion": "Serverless es un modelo donde el proveedor cloud gestiona la infraestructura, y el código se ejecuta en funciones stateless (ej: AWS Lambda, Azure Functions)."
+    },
+    {
+        "pregunta": "¿Qué es 'GraphQL'?",
+        "opciones": [
+            "Un lenguaje de consultas para APIs",
+            "Un tipo de base de datos",
+            "Un framework de testing",
+            "Un protocolo de cifrado"
+        ],
+        "respuesta": "Un lenguaje de consultas para APIs",
+        "descripcion": "GraphQL es un lenguaje para APIs que permite a los clientes solicitar solo los datos que necesitan (contrario a REST, que devuelve respuestas fijas)."
+    },
+    {
+        "pregunta": "¿Qué es 'OAuth'?",
+        "opciones": [
+            "Un protocolo de autenticación delegada",
+            "Un lenguaje de programación",
+            "Un tipo de base de datos NoSQL",
+            "Un algoritmo de compresión"
+        ],
+        "respuesta": "Un protocolo de autenticación delegada",
+        "descripcion": "OAuth es un estándar que permite a aplicaciones acceder a recursos de un usuario (ej: Google, Facebook) sin compartir su contraseña (usa tokens)."
+    },
+    {
+        "pregunta": "¿Qué es 'CI/CD'?",
+        "opciones": [
+            "Un framework frontend",
+            "Integración Continua/Despliegue Continuo",
+            "Un lenguaje de consultas",
+            "Un patrón de diseño"
+        ],
+        "respuesta": "Integración Continua/Despliegue Continuo",
+        "descripcion": "CI/CD son prácticas para automatizar pruebas (CI) y despliegues (CD), permitiendo entregar software rápidamente y con calidad (ej: Jenkins, GitHub Actions)."
+    },
+    {
+        "pregunta": "¿Qué es 'Docker'?",
+        "opciones": [
+            "Una plataforma para contenerizar aplicaciones",
+            "Un lenguaje de programación",
+            "Un tipo de base de datos",
+            "Un protocolo HTTP"
+        ],
+        "respuesta": "Una plataforma para contenerizar aplicaciones",
+        "descripcion": "Docker permite empaquetar aplicaciones en contenedores ligeros y portables, con todo lo necesario para ejecutarse (dependencias, bibliotecas, etc.)."
+    },
+    {
+        "pregunta": "¿Qué es 'Kubernetes'?",
+        "opciones": [
+            "Un sistema de orquestación de contenedores",
+            "Un lenguaje de scripting",
+            "Un protocolo de transferencia de archivos",
+            "Un framework CSS"
+        ],
+        "respuesta": "Un sistema de orquestación de contenedores",
+        "descripcion": "Kubernetes (K8s) automatiza el despliegue, escalado y gestión de aplicaciones en contenedores (ej: Docker)."
+    },
+    {
+        "pregunta": "¿Qué es 'SOLID'?",
+        "opciones": [
+            "Un conjunto de principios de diseño OO",
+            "Un protocolo de red",
+            "Un framework JavaScript",
+            "Un algoritmo de ordenación"
+        ],
+        "respuesta": "Un conjunto de principios de diseño OO",
+        "descripcion": "SOLID son 5 principios para escribir código mantenible y escalable: S (Responsabilidad Única), O (Abierto/Cerrado), L (Liskov), I (Segregación de Interfaces), D (Inversión de Dependencias)."
+    },
+    {
+        "pregunta": "¿Qué es 'Big O Notation'?",
+        "opciones": [
+            "Una métrica para describir la eficiencia de algoritmos",
+            "Un lenguaje de programación",
+            "Un tipo de estructura de datos",
+            "Un patrón de diseño"
+        ],
+        "respuesta": "Una métrica para describir la eficiencia de algoritmos",
+        "descripcion": "La notación Big O describe el rendimiento de un algoritmo en términos de tiempo (complejidad temporal) o espacio (complejidad espacial) según crece la entrada."
+    },
+    {
+        "pregunta": "¿Qué es 'REST'?",
+        "opciones": [
+            "Un estilo arquitectónico para APIs web",
+            "Un lenguaje de programación",
+            "Un protocolo de bases de datos",
+            "Un framework frontend"
+        ],
+        "respuesta": "Un estilo arquitectónico para APIs web",
+        "descripcion": "REST (Representational State Transfer) es un estilo para diseñar APIs basado en recursos, métodos HTTP (GET, POST, etc.) y statelessness."
+    },
+    {
+        "pregunta": "¿Qué es 'MVC'?",
+        "opciones": [
+            "Un patrón arquitectónico (Modelo-Vista-Controlador)",
+            "Un protocolo de red",
+            "Un tipo de base de datos",
+            "Un algoritmo de búsqueda"
+        ],
+        "respuesta": "Un patrón arquitectónico (Modelo-Vista-Controlador)",
+        "descripcion": "MVC separa una aplicación en: Modelo (datos y lógica), Vista (interfaz) y Controlador (maneja interacciones). Usado en frameworks como Django, Ruby on Rails."
+    },
+    {
+        "pregunta": "¿Qué es 'TDD'?",
+        "opciones": [
+            "Un enfoque donde primero se escriben tests y luego el código",
+            "Un tipo de base de datos",
+            "Un lenguaje de programación",
+            "Un protocolo HTTP"
+        ],
+        "respuesta": "Un enfoque donde primero se escriben tests y luego el código",
+        "descripcion": "TDD (Test-Driven Development) sigue el ciclo: 1) Escribir test fallido, 2) Implementar código que lo pase, 3) Refactorizar."
+    },
+    {
+        "pregunta": "¿Qué es 'NoSQL'?",
+        "opciones": [
+            "Bases de datos no relacionales",
+            "Un lenguaje de consultas",
+            "Un protocolo de autenticación",
+            "Un framework frontend"
+        ],
+        "respuesta": "Bases de datos no relacionales",
+        "descripcion": "NoSQL se refiere a bases de datos que no usan tablas relacionales (ej: MongoDB (documentos), Redis (clave-valor), Cassandra (columnar))."
+    },
+    {
+        "pregunta": "¿Qué es 'Agile'?",
+        "opciones": [
+            "Una metodología de desarrollo iterativo e incremental",
+            "Un lenguaje de programación",
+            "Un tipo de algoritmo",
+            "Un protocolo de red"
+        ],
+        "respuesta": "Una metodología de desarrollo iterativo e incremental",
+        "descripcion": "Agile (ej: Scrum, Kanban) promueve desarrollo iterativo, colaboración con el cliente y adaptación a cambios (contrario a modelos en cascada)."
+    },
+    {
+        "pregunta": "¿Qué es 'DevOps'?",
+        "opciones": [
+            "Una cultura que integra desarrollo y operaciones",
+            "Un lenguaje de programación",
+            "Un tipo de base de datos",
+            "Un framework CSS"
+        ],
+        "respuesta": "Una cultura que integra desarrollo y operaciones",
+        "descripcion": "DevOps busca acortar el ciclo de vida del software mediante automatización (CI/CD), colaboración y monitoreo continuo."
+    },
+    {
+        "pregunta": "¿Qué es 'XML'?",
+        "opciones": [
+            "Un lenguaje de marcado extensible",
+            "Un protocolo de red",
+            "Un tipo de base de datos",
+            "Un framework JavaScript"
+        ],
+        "respuesta": "Un lenguaje de marcado extensible",
+        "descripcion": "XML (eXtensible Markup Language) es un formato para almacenar y transportar datos estructurados (similar a JSON pero con tags personalizables)."
+    },
+    {
+        "pregunta": "¿Qué es 'JSON'?",
+        "opciones": [
+            "Un formato ligero de intercambio de datos",
+            "Un lenguaje de programación",
+            "Un protocolo HTTP",
+            "Un tipo de algoritmo"
+        ],
+        "respuesta": "Un formato ligero de intercambio de datos",
+        "descripcion": "JSON (JavaScript Object Notation) es un formato basado en texto para representar datos estructurados (pares clave-valor). Usado en APIs y configuraciones."
+    },
+    {
+        "pregunta": "¿Qué es 'YAML'?",
+        "opciones": [
+            "Un formato de serialización de datos legible",
+            "Un lenguaje de programación",
+            "Un protocolo de bases de datos",
+            "Un framework frontend"
+        ],
+        "respuesta": "Un formato de serialización de datos legible",
+        "descripcion": "YAML (YAML Ain't Markup Language) es un formato humano-legible para configuraciones (ej: Docker Compose, Kubernetes). Usa indentación y es menos verboso que JSON."
+    },
+    {
+        "pregunta": "¿Qué es 'WebSockets'?",
+        "opciones": [
+            "Un protocolo para comunicación bidireccional en tiempo real",
+            "Un framework CSS",
+            "Un tipo de base de datos",
+            "Un lenguaje de consultas"
+        ],
+        "respuesta": "Un protocolo para comunicación bidireccional en tiempo real",
+        "descripcion": "WebSockets permite conexiones persistentes y full-duplex entre cliente y servidor (ideal para chats, juegos online, actualizaciones en vivo)."
+    },
+    {
+        "pregunta": "¿Qué es 'JWT'?",
+        "opciones": [
+            "Un estándar para tokens de autenticación",
+            "Un lenguaje de programación",
+            "Un protocolo de transferencia de archivos",
+            "Un framework backend"
+        ],
+        "respuesta": "Un estándar para tokens de autenticación",
+        "descripcion": "JWT (JSON Web Token) es un token compacto y autónomo para autenticación, que contiene payload, header y firma digital."
+    },
+    {
+        "pregunta": "¿Qué es 'OOP'?",
+        "opciones": [
+            "Un paradigma basado en objetos y clases",
+            "Un protocolo de red",
+            "Un tipo de base de datos",
+            "Un algoritmo de ordenación"
+        ],
+        "respuesta": "Un paradigma basado en objetos y clases",
+        "descripcion": "OOP (Object-Oriented Programming) organiza el código en objetos que encapsulan datos (atributos) y comportamientos (métodos). Pilares: herencia, polimorfismo, encapsulamiento, abstracción."
+    },
+    {
+        "pregunta": "¿Qué es 'FP'?",
+        "opciones": [
+            "Un paradigma basado en funciones puras y composición",
+            "Un protocolo HTTP",
+            "Un framework CSS",
+            "Un lenguaje de consultas"
+        ],
+        "respuesta": "Un paradigma basado en funciones puras y composición",
+        "descripcion": "FP (Functional Programming) trata la computación como evaluación de funciones matemáticas (sin efectos secundarios). Conceptos: funciones puras, inmutabilidad, higher-order functions."
+    },
+    {
+        "pregunta": "¿Qué es 'CDN'?",
+        "opciones": [
+            "Una red de servidores para entregar contenido rápido",
+            "Un lenguaje de programación",
+            "Un tipo de base de datos",
+            "Un protocolo de autenticación"
+        ],
+        "respuesta": "Una red de servidores para entregar contenido rápido",
+        "descripcion": "CDN (Content Delivery Network) son servidores distribuidos globalmente que cachean contenido estático (ej: imágenes, CSS) para reducir latencia."
+    },
+    {
+        "pregunta": "¿Qué es 'SSR'?",
+        "opciones": [
+            "Renderizado del lado del servidor",
+            "Un protocolo seguro",
+            "Un tipo de algoritmo",
+            "Un framework backend"
+        ],
+        "respuesta": "Renderizado del lado del servidor",
+        "descripcion": "SSR (Server-Side Rendering) genera HTML en el servidor (ej: Next.js, Nuxt.js), mejorando SEO y performance inicial vs CSR (Client-Side Rendering)."
+    },
+    {
+        "pregunta": "¿Qué es 'CSR'?",
+        "opciones": [
+            "Renderizado del lado del cliente",
+            "Un protocolo de cifrado",
+            "Un tipo de base de datos",
+            "Un lenguaje de programación"
+        ],
+        "respuesta": "Renderizado del lado del cliente",
+        "descripcion": "CSR (Client-Side Rendering) genera HTML en el navegador usando JavaScript (ej: React, Angular). Más interactivo pero puede afectar SEO."
+    },
+    {
+        "pregunta": "¿Qué es 'DOM'?",
+        "opciones": [
+            "Una representación en memoria de un documento HTML",
+            "Un protocolo de red",
+            "Un tipo de algoritmo",
+            "Un framework CSS"
+        ],
+        "respuesta": "Una representación en memoria de un documento HTML",
+        "descripcion": "DOM (Document Object Model) es una interfaz que representa documentos HTML/XML como árbol de nodos, permitiendo manipulación dinámica con JavaScript."
+    },
+    {
+        "pregunta": "¿Qué es 'Virtual DOM'?",
+        "opciones": [
+            "Una copia ligera del DOM para optimizar actualizaciones",
+            "Un protocolo HTTP",
+            "Un tipo de base de datos",
+            "Un lenguaje de consultas"
+        ],
+        "respuesta": "Una copia ligera del DOM para optimizar actualizaciones",
+        "descripcion": "El Virtual DOM (usado en React) es una representación en memoria del DOM real que permite actualizaciones eficientes mediante diffing y reconciliación."
+    },
+    {
+        "pregunta": "¿Qué es 'Webpack'?",
+        "opciones": [
+            "Un empaquetador de módulos para JavaScript",
+            "Un lenguaje de programación",
+            "Un protocolo de autenticación",
+            "Un framework backend"
+        ],
+        "respuesta": "Un empaquetador de módulos para JavaScript",
+        "descripcion": "Webpack bundlea assets (JS, CSS, imágenes) en módulos optimizados para producción, con soporte para loaders y plugins."
+    },
+    {
+        "pregunta": "¿Qué es 'Babel'?",
+        "opciones": [
+            "Un transpilador de JavaScript",
+            "Un framework CSS",
+            "Un tipo de base de datos",
+            "Un protocolo de red"
+        ],
+        "respuesta": "Un transpilador de JavaScript",
+        "descripcion": "Babel convierte código JavaScript moderno (ES6+) en versiones compatibles con navegadores antiguos, mediante transpilación y polyfills."
+    },
+    {
+        "pregunta": "¿Qué es 'npm'?",
+        "opciones": [
+            "Un gestor de paquetes para Node.js",
+            "Un lenguaje de programación",
+            "Un protocolo HTTP",
+            "Un framework frontend"
+        ],
+        "respuesta": "Un gestor de paquetes para Node.js",
+        "descripcion": "npm (Node Package Manager) es el repositorio más grande de librerías JavaScript y herramienta CLI para instalar dependencias."
+    },
+    {
+        "pregunta": "¿Qué es 'RESTful'?",
+        "opciones": [
+            "Una API que sigue los principios REST",
+            "Un lenguaje de programación",
+            "Un tipo de algoritmo",
+            "Un framework CSS"
+        ],
+        "respuesta": "Una API que sigue los principios REST",
+        "descripcion": "Una API RESTful usa métodos HTTP (GET, POST, etc.), URLs para recursos, y formatos como JSON/XML para seguir el estilo arquitectónico REST."
+    },
+    {
+        "pregunta": "¿Qué es 'SaaS'?",
+        "opciones": [
+            "Software como Servicio",
+            "Un protocolo de red",
+            "Un tipo de base de datos",
+            "Un lenguaje de programación"
+        ],
+        "respuesta": "Software como Servicio",
+        "descripcion": "SaaS (Software as a Service) es un modelo de distribución donde el software se aloja en la nube y se accede vía navegador (ej: Gmail, Slack)."
+    },
+    {
+        "pregunta": "¿Qué es un algoritmo y cuál es su importancia en el desarrollo de software?",
+        "opciones": [
+            "Un lenguaje de programación",
+            "Un conjunto de instrucciones paso a paso para resolver un problema",
+            "Un tipo de estructura de datos",
+            "Un framework de desarrollo"
+        ],
+        "respuesta": "Un conjunto de instrucciones paso a paso para resolver un problema",
+        "descripcion": "Un algoritmo es una secuencia lógica y finita de pasos para resolver un problema o realizar una tarea. Es fundamental para optimizar el rendimiento y la eficiencia del software."
+    },
+    {
+        "pregunta": "¿Cuál es la complejidad temporal del algoritmo de ordenación 'QuickSort' en el peor caso?",
+        "opciones": [
+            "O(n log n)",
+            "O(n²)",
+            "O(1)",
+            "O(n)"
+        ],
+        "respuesta": "O(n²)",
+        "descripcion": "QuickSort tiene una complejidad promedio de O(n log n), pero en el peor caso (pivotes mal elegidos) puede degradarse a O(n²)."
+    },
+    {
+        "pregunta": "¿Qué estructura de datos utiliza el principio LIFO (Last In, First Out)?",
+        "opciones": [
+            "Cola (Queue)",
+            "Lista enlazada",
+            "Pila (Stack)",
+            "Árbol binario"
+        ],
+        "respuesta": "Pila (Stack)",
+        "descripcion": "Una pila (Stack) sigue el principio LIFO: el último elemento añadido es el primero en ser eliminado."
+    },
+    {
+        "pregunta": "¿Cuál de estos NO es un patrón de diseño creacional?",
+        "opciones": [
+            "Singleton",
+            "Factory Method",
+            "Observer",
+            "Builder"
+        ],
+        "respuesta": "Observer",
+        "descripcion": "Observer es un patrón de comportamiento, mientras que Singleton, Factory Method y Builder son patrones creacionales."
+    },
+    {
+        "pregunta": "En bases de datos, ¿qué significa ACID?",
+        "opciones": [
+            "Atomicity, Consistency, Isolation, Durability",
+            "Aggregation, Consistency, Indexing, Data",
+            "Asynchronous, Concurrent, Integrated, Distributed",
+            "Automation, Compression, Integrity, Decoupling"
+        ],
+        "respuesta": "Atomicity, Consistency, Isolation, Durability",
+        "descripcion": "ACID garantiza transacciones confiables en bases de datos: Atomicidad (todo o nada), Consistencia (datos válidos), Aislamiento (ejecución independiente) y Durabilidad (cambios permanentes)."
+    },
+    {
+        "pregunta": "¿Qué paradigma de programación se basa en 'objetos' y 'clases'?",
+        "opciones": [
+            "Programación funcional",
+            "Programación orientada a objetos (POO)",
+            "Programación procedural",
+            "Programación reactiva"
+        ],
+        "respuesta": "Programación orientada a objetos (POO)",
+        "descripcion": "La POO organiza el código en objetos (instancias de clases) que encapsulan datos y comportamientos."
+    },
+    {
+        "pregunta": "¿Qué método HTTP se utiliza para solicitar datos de un recurso sin modificarlo?",
+        "opciones": [
+            "POST",
+            "PUT",
+            "DELETE",
+            "GET"
+        ],
+        "respuesta": "GET",
+        "descripcion": "GET es un método HTTP seguro e idempotente usado para leer datos."
+    },
+    {
+        "pregunta": "¿Qué es un 'pull request' en Git?",
+        "opciones": [
+            "Un comando para descargar cambios remotos",
+            "Una solicitud para fusionar cambios en una rama principal",
+            "Un sistema de backup local",
+            "Una herramienta de depuración"
+        ],
+        "respuesta": "Una solicitud para fusionar cambios en una rama principal",
+        "descripcion": "Un pull request permite revisar y discutir cambios antes de integrarlos a una rama (como main/master)."
+    },
+    {
+        "pregunta": "¿Qué lenguaje es compilado a JavaScript y añade tipos estáticos?",
+        "opciones": [
+            "Python",
+            "TypeScript",
+            "Ruby",
+            "Dart"
+        ],
+        "respuesta": "TypeScript",
+        "descripcion": "TypeScript extiende JavaScript añadiendo tipos estáticos y otras características, pero se compila a JS para su ejecución."
+    },
+    {
+        "pregunta": "¿Qué estructura de datos es más eficiente para búsquedas en tiempo constante (O(1))?",
+        "opciones": [
+            "Array",
+            "Tabla hash (Hash Table)",
+            "Árbol binario de búsqueda",
+            "Lista enlazada"
+        ],
+        "respuesta": "Tabla hash (Hash Table)",
+        "descripcion": "Las tablas hash permiten búsquedas en O(1) promedio gracias a la función de hashing, aunque pueden colisionar."
+    },
+    {
+        "pregunta": "¿Qué principio SOLID establece que una clase debe tener una única responsabilidad?",
+        "opciones": [
+            "Principio de Abierto/Cerrado",
+            "Principio de Sustitución de Liskov",
+            "Principio de Responsabilidad Única",
+            "Principio de Segregación de Interfaces"
+        ],
+        "respuesta": "Principio de Responsabilidad Única",
+        "descripcion": "El principio SRP (Single Responsibility Principle) promueve que una clase tenga solo una razón para cambiar."
+    },
+    {
+        "pregunta": "¿Qué herramienta se usa para automatizar despliegues de aplicaciones?",
+        "opciones": [
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "Postman"
+        ],
+        "respuesta": "Jenkins",
+        "descripcion": "Jenkins es un servidor de automatización open-source ampliamente usado para CI/CD (Integración Continua/Despliegue Continuo)."
+    },
+    {
+        "pregunta": "¿Qué tipo de testing verifica el comportamiento de un módulo de forma aislada?",
+        "opciones": [
+            "Testing de integración",
+            "Testing end-to-end",
+            "Testing unitario",
+            "Testing de regresión"
+        ],
+        "respuesta": "Testing unitario",
+        "descripcion": "El testing unitario valida unidades individuales de código (como funciones o clases) en aislamiento."
+    }
+]

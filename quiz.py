@@ -225,6 +225,11 @@ def main(page: ft.Page):
                 content=ft.ElevatedButton(
                     "Futbol", on_click=seleccion_pregunta, data="futbol.json", icon=ft.Icons.SPORTS_SOCCER, icon_color=ft.Colors.PINK_600, color=ft.Colors.PINK_600),
                 alignment=ft.alignment.center
+            ),
+            ft.Container(
+                content=ft.ElevatedButton(
+                    "Desarrollo de software", on_click=seleccion_pregunta, data="desarrollo.json", icon=ft.Icons.DEVELOPER_MODE_SHARP, icon_color=ft.Colors.PINK_600, color=ft.Colors.PINK_600),
+                alignment=ft.alignment.center
             )
 
         ]
