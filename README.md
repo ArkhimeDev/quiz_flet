@@ -1,6 +1,6 @@
 ## 📚 QUIZ QUEST  
 
-<img src="[https://example.com/quiz-quest-logo.png](https://github.com/ArkhimeDev/quiz_flet/blob/main/assets/images/quiz_quest.png)" alt="Logo de Quiz Quest" width="200">
+<img src="https://github.com/ArkhimeDev/quiz_flet/blob/main/assets/images/quiz_quest.png" alt="Logo de Quiz Quest" width="200">
 
 
 **Quiz Quest** es una aplicación de preguntas y respuestas tipo test.  
