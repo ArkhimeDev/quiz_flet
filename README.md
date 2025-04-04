@@ -1,6 +1,6 @@
 ## 📚 QUIZ QUEST  
 
-![Logo Quiz quest](.assets/images/quiz_quest.png)
+![Logo Quiz quest](https://github.com/ArkhimeDev/quiz_flet/blob/main/assets/images/quiz_quest.png)
 
 **Quiz Quest** es una aplicación de preguntas y respuestas tipo test.  
 Puedes utilizarla para entretenerte o para estudiar un tema específico.  
