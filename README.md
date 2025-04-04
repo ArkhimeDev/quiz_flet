@@ -1,5 +1,7 @@
 ## 📚 QUIZ QUEST  
 
+![Logo Quiz quest](./images/quiz_quest.png)
+
 **Quiz Quest** es una aplicación de preguntas y respuestas tipo test.  
 Puedes utilizarla para entretenerte o para estudiar un tema específico.  
 
